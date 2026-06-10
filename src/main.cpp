@@ -7,7 +7,7 @@
 #include <thread>
 
 int main() {
-    InitWindow(800, 450, "raylib test");
+    InitWindow(800, 450, "Touhou: Through the Bamboo Forest");
     std::this_thread::sleep_for(std::chrono::milliseconds(1000));
     return 0;
 }
