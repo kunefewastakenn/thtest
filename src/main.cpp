@@ -4,8 +4,10 @@
 
 #include <iostream>
 #include <raylib.h>
+#include <thread>
 
 int main() {
-    std::cout << "hi bro";
+    InitWindow(800, 450, "raylib test");
+    std::this_thread::sleep_for(std::chrono::milliseconds(1000));
     return 0;
 }
