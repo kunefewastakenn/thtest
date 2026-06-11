@@ -11,10 +11,6 @@
 #include <cstring>
 #include <thread>
 
-#include "../include/raylib.h"
-#include "../include/raylib.h"
-#include "../include/raylib.h"
-
 std::string initText = "Initializing";
 bool loaded = false;
 
@@ -26,7 +22,6 @@ void loadingScreen() {
         } else {
             initText += ".";
         }
-        std::cout << initText << std::endl;
         std::this_thread::sleep_for(std::chrono::milliseconds(500));
     }
 
@@ -40,7 +35,7 @@ int main() {
     Texture2D ardaImg = LoadTexture("resources/images/arda.png");
     Texture2D loadingImg = LoadTexture("resources/images/loading.png");
 
-    Font cirnoTtf = LoadFontEx("resources/fonts/cirno.ttf", 128, 0, 250);
+    Font cirnoTtf = LoadFontEx("resources/fonts/Cirno.ttf", 128, 0, 250);
 
     std::thread loadingThread(loadingScreen); // thread for loading text
 
@@ -49,7 +44,9 @@ int main() {
         ClearBackground(BLACK);
 
         DrawTexturePro(ardaImg, {0, 0, 548, 426}, {0, 0, 2048, 2048}, {1024,1024}, (clock()/4)%360, WHITE);
+#ifndef NDEBUG
         DrawText(TextFormat("%i FPS", GetFPS()), 10, 10, 16, LIGHTGRAY);
+#endif
 
         if (!loaded) {
             int fontSize = 24;

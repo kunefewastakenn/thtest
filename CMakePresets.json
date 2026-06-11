@@ -11,12 +11,28 @@
         "CMAKE_MAKE_PROGRAM": "C:/raylib/w64devkit/bin/ninja.exe",
         "RAYLIB_ROOT": "C:/raylib/w64devkit"
       }
+    },
+    {
+      "name": "release-tohotest",
+      "displayName": "Release to Downloads/tohotest",
+      "generator": "Ninja",
+      "binaryDir": "C:/Users/pixeloyuncu/Downloads/tohotest",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Release",
+        "CMAKE_CXX_COMPILER": "C:/raylib/w64devkit/bin/g++.exe",
+        "CMAKE_MAKE_PROGRAM": "C:/raylib/w64devkit/bin/ninja.exe",
+        "RAYLIB_ROOT": "C:/raylib/w64devkit"
+      }
     }
   ],
   "buildPresets": [
     {
       "name": "raylib-w64devkit",
       "configurePreset": "raylib-w64devkit"
+    },
+    {
+      "name": "release-tohotest",
+      "configurePreset": "release-tohotest"
     }
   ]
 }

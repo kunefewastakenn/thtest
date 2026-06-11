@@ -1,0 +1,3 @@
+C:/Users/pixeloyuncu/CLionProjects/thtest/Debug/CMakeFiles/thtest.dir
+C:/Users/pixeloyuncu/CLionProjects/thtest/Debug/CMakeFiles/edit_cache.dir
+C:/Users/pixeloyuncu/CLionProjects/thtest/Debug/CMakeFiles/rebuild_cache.dir

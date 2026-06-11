@@ -1,3 +1,0 @@
-/home/cursr/git/thtest/build/CMakeFiles/myproject.dir
-/home/cursr/git/thtest/build/CMakeFiles/edit_cache.dir
-/home/cursr/git/thtest/build/CMakeFiles/rebuild_cache.dir
