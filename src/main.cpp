@@ -10,6 +10,10 @@
 #include <cstring>
 #include <thread>
 
+#include "../include/raylib.h"
+#include "../include/raylib.h"
+#include "../include/raylib.h"
+
 std::string initText = "Initializing";
 bool loaded = false;
 
@@ -32,12 +36,14 @@ int main() {
     SetConfigFlags(FLAG_WINDOW_RESIZABLE);
     InitWindow(800, 450, "Touhou: Through the Bamboo Forest");
 
+    Texture2D arda = LoadTexture("resources/arda.png");
     std::thread loadingThread(loadingScreen); // thread for loading text
 
     while (!WindowShouldClose()) {
         BeginDrawing();
         ClearBackground(BLACK);
 
+        DrawTexturePro(arda, {0, 0, 548, 426}, {10, 36, 500, 500}, {250, 250}, (clock()/4)%360, WHITE);
         DrawText(TextFormat("%i FPS", GetFPS()), 10, 10, 16, LIGHTGRAY);
 
         if (!loaded) {
