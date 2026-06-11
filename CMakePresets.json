@@ -1,0 +1,22 @@
+{
+  "version": 6,
+  "configurePresets": [
+    {
+      "name": "raylib-w64devkit",
+      "displayName": "raylib w64devkit",
+      "generator": "Ninja",
+      "binaryDir": "${sourceDir}/cmake-build-raylib",
+      "cacheVariables": {
+        "CMAKE_CXX_COMPILER": "C:/raylib/w64devkit/bin/g++.exe",
+        "CMAKE_MAKE_PROGRAM": "C:/raylib/w64devkit/bin/ninja.exe",
+        "RAYLIB_ROOT": "C:/raylib/w64devkit"
+      }
+    }
+  ],
+  "buildPresets": [
+    {
+      "name": "raylib-w64devkit",
+      "configurePreset": "raylib-w64devkit"
+    }
+  ]
+}
