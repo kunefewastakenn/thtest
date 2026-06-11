@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/cursr/git/thtest/build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
