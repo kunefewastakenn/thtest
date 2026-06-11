@@ -11,6 +11,6 @@ typedef struct supertext {
     float size;
     float x; // 0-1
     float y; // 0-1
-};
+} supertext;
 
 #endif //THTEST_SUPERTEXT_H

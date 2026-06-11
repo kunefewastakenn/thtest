@@ -4,11 +4,11 @@
 
 #include <iostream>
 #include <raylib.h>
+#include <chrono>
+//#include <supertext.h>
 #include <algorithm>
 #include <cstring>
 #include <thread>
-
-#include <supertext.h>
 
 std::string initText = "Initializing";
 bool loaded = false;
@@ -40,8 +40,11 @@ int main() {
 
         int fontSize = 24;
         int textWidth = MeasureText(initText.c_str(), fontSize);
+        DrawText(initText.c_str(), (GetScreenWidth() / 2) - (textWidth / 2), 225, fontSize, WHITE);
 
-        DrawText(initText.c_str(), (GetScreenWidth() / 2) - (textWidth / 2), 225, fontSize, LIGHTGRAY);
+        DrawRectanglePro({GetScreenWidth()/2.0f, GetScreenHeight()/2.0f+100, 40, 40}, {20, 20},
+            (clock()/4) % 360, WHITE);
+
         EndDrawing();
     }
 
@@ -50,7 +53,7 @@ int main() {
         ClearBackground(BLACK);
 
         int textWidth = MeasureText("VICTORY :D", 35);
-        DrawText("VICTORY :D", (GetScreenWidth() / 2) - (textWidth / 2), 225, 35, LIGHTGRAY);
+        DrawText("VICTORY :D", (GetScreenWidth() / 2) - (textWidth / 2), 225, 35, YELLOW);
 
         EndDrawing();
     }

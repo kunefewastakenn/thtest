@@ -7,6 +7,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 add_executable(thtest
     src/main.cpp
+        include/supertext.h
 )
 
 set(RAYLIB_ROOT "C:/raylib/w64devkit" CACHE PATH "Path to the raylib w64devkit installation")
