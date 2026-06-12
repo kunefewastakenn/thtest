@@ -1,7 +1,7 @@
 [
 {
   "directory": "C:/Users/pixeloyuncu/CLionProjects/thtest/Debug",
-  "command": "C:\\raylib\\w64devkit\\bin\\g++.exe -g -std=gnu++17 -fdiagnostics-color=always -o CMakeFiles\\thtest.dir\\src\\main.cpp.obj -c C:\\Users\\pixeloyuncu\\CLionProjects\\thtest\\src\\main.cpp",
+  "command": "C:\\raylib\\w64devkit\\bin\\g++.exe -IC:/Users/pixeloyuncu/CLionProjects/thtest/include -g -std=gnu++17 -fdiagnostics-color=always -o CMakeFiles\\thtest.dir\\src\\main.cpp.obj -c C:\\Users\\pixeloyuncu\\CLionProjects\\thtest\\src\\main.cpp",
   "file": "C:/Users/pixeloyuncu/CLionProjects/thtest/src/main.cpp",
   "output": "C:/Users/pixeloyuncu/CLionProjects/thtest/Debug/CMakeFiles/thtest.dir/src/main.cpp.obj"
 }

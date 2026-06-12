@@ -6,10 +6,10 @@
 #include <raylib.h>
 #include <chrono>
 #include <cmath>
-//#include <supertext.h>
 #include <algorithm>
 #include <cstring>
 #include <thread>
+#include <tweeny.h>
 
 std::string initText = "Initializing";
 bool loaded = false;
@@ -44,9 +44,7 @@ int main() {
         ClearBackground(BLACK);
 
         DrawTexturePro(ardaImg, {0, 0, 548, 426}, {0, 0, 2048, 2048}, {1024,1024}, (clock()/4)%360, WHITE);
-#ifndef NDEBUG
         DrawText(TextFormat("%i FPS", GetFPS()), 10, 10, 16, LIGHTGRAY);
-#endif
 
         if (!loaded) {
             int fontSize = 24;
